@@ -56,19 +56,23 @@ Output: [1,2]
 
 ## Approach
 
-### Approach — Hash Map
+### Approach — Extended Moore's Voting Algorithm
 
-* Use an `unordered_map` to store the **frequency of each element**.
-* The required frequency is **more than `n/3`**, so calculate:  `tar = (n/3) + 1`.
-* Traverse the array and increase the frequency of each element in the map.
-* Whenever the frequency of an element becomes exactly `tar`, add that element to the answer.
-* We check `== tar` instead of `> tar` because once an element reaches `tar`, it already satisfies the condition, and we don't want to add it multiple times.
-* Since at most **2 elements** can appear more than `n/3` times, the answer will contain at most 2 elements.
+* For elements appearing more than `N/3` times, there can be **at most 2 majority elements**.
+* Therefore, maintain **2 candidates** and their respective counts.
+* Traverse the array:
 
-**Time Complexity:** O(N) average
-**Space Complexity:** O(N)
+  * If the current element matches `candidate1`, increase `count1`.
+  * Else if it matches `candidate2`, increase `count2`.
+  * Else if `count1` is `0`, make the current element `candidate1`.
+  * Else if `count2` is `0`, make the current element `candidate2`.
+  * Otherwise, decrease both counts because the current element cancels out one occurrence of both candidates.
+* After finding the two possible candidates, traverse the array again to **verify their actual frequencies**.
+* Add a candidate to the answer only if its frequency is greater than `N/3`.
 
-This is better than the brute-force approach, but it is **not space-optimal** because we use an `unordered_map`.
+**Time Complexity:** O(N)
+
+**Space Complexity:** O(1)
 
 ---
 
@@ -77,7 +81,7 @@ This is better than the brute-force approach, but it is **not space-optimal** be
 | Metric | Value |
 |---------|-------|
 | Time | O(N) |
-| Space | O(N) |
+| Space | O(1) |
 
 ---
 
