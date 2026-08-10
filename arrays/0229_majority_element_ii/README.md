@@ -56,54 +56,19 @@ Output: [1,2]
 
 ## Approach
 
-Step 1 — Count frequencies
+### Approach — Hash Map
 
-Use an unordered_map:
+* Use an `unordered_map` to store the **frequency of each element**.
+* The required frequency is **more than `n/3`**, so calculate:  `tar = (n/3) + 1`.
+* Traverse the array and increase the frequency of each element in the map.
+* Whenever the frequency of an element becomes exactly `tar`, add that element to the answer.
+* We check `== tar` instead of `> tar` because once an element reaches `tar`, it already satisfies the condition, and we don't want to add it multiple times.
+* Since at most **2 elements** can appear more than `n/3` times, the answer will contain at most 2 elements.
 
-unordered_map<int, int> mp;
+**Time Complexity:** O(N) average
+**Space Complexity:** O(N)
 
-Traverse the array and count each element:
-
-for (int x : nums) {
-    mp[x]++;
-}
-
-For example:
-
-nums = [3, 2, 3]
-
-mp:
-3 → 2
-2 → 1
-
-Step 2 — Calculate the target frequency
-int tar = nums.size() / 3;
-
-We need elements whose frequency is strictly greater than n/3.
-
-For n = 6:
-
-n/3 = 2
-
-So frequency must be > 2
-
-Step 3 — Traverse the map
-
-Check every element's frequency:
-
-for (auto x : mp) {
-    if (x.second > tar) {
-        ans.push_back(x.first);
-    }
-}
-
-Here:
-
-x.first → element
-x.second → frequency
-
-Step 4 — Return the answer
-return ans;
+This is better than the brute-force approach, but it is **not space-optimal** because we use an `unordered_map`.
 
 ---
 
