@@ -11,17 +11,16 @@ public:
         unordered_map<int, int> mp;
         vector<int> ans;
 
+        int tar = (nums.size() / 3) + 1;
+
         for(int x : nums) {
             mp[x]++;
-        }
 
-        int tar = nums.size() / 3;
-
-        for(auto x : mp) {
-            if(x.second > tar) {
-                ans.push_back(x.first);
+            if(mp[x] == tar) {
+                ans.push_back(x);
             }
         }
+ 
 
         return ans;
     }
