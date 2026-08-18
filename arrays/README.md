@@ -6,10 +6,10 @@
 
 | Difficulty | Count |
 |------------|------:|
-| Easy | 3 |
+| Easy | 4 |
 | Medium | 2 |
 | Hard | 0 |
-| **Total** | **5** |
+| **Total** | **6** |
 
 ---
 
@@ -21,6 +21,7 @@
 |118|[Pascal's Triangle](./0118_pascals_triangle)|Easy|C++|
 |189|[Rotate Array](./0189_rotate_array)|Medium|C++|
 |229|[Majority Element II](./0229_majority_element_ii)|Medium|C++|
+|283|[Move Zeroes](./0283_move_zeroes)|Easy|C++|
 |1752|[Check if Array Is Sorted and Rotated](./1752_check_if_array_is_sorted_and_rotated)|Easy|C++|
 
 ---
