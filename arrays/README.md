@@ -6,10 +6,10 @@
 
 | Difficulty | Count |
 |------------|------:|
-| Easy | 5 |
+| Easy | 6 |
 | Medium | 2 |
 | Hard | 0 |
-| **Total** | **7** |
+| **Total** | **8** |
 
 ---
 
@@ -17,6 +17,7 @@
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
+|1|[Two Sum](./0001_two_sum)|Easy|C++|
 |26|[Remove Duplicates from Sorted Array](./0026_remove_duplicates_from_sorted_array)|Easy|C++|
 |118|[Pascal's Triangle](./0118_pascals_triangle)|Easy|C++|
 |189|[Rotate Array](./0189_rotate_array)|Medium|C++|
