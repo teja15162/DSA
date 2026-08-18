@@ -8,8 +8,8 @@ Automatically maintained by PushCode.
 
 | Metric | Count |
 |--------|------:|
-| Total Problems | 7 |
-| Easy | 5 |
+| Total Problems | 8 |
+| Easy | 6 |
 | Medium | 2 |
 | Hard | 0 |
 
@@ -19,7 +19,7 @@ Automatically maintained by PushCode.
 
 | Topic | Problems |
 |-------|---------:|
-| [Arrays](./arrays) | 7 |
+| [Arrays](./arrays) | 8 |
 
 ---
 
@@ -27,7 +27,7 @@ Automatically maintained by PushCode.
 
 | Language | Solutions |
 |----------|----------:|
-| C++ | 7 |
+| C++ | 8 |
 
 ---
 
