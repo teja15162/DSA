@@ -6,10 +6,10 @@
 
 | Difficulty | Count |
 |------------|------:|
-| Easy | 4 |
+| Easy | 5 |
 | Medium | 2 |
 | Hard | 0 |
-| **Total** | **6** |
+| **Total** | **7** |
 
 ---
 
@@ -22,6 +22,7 @@
 |189|[Rotate Array](./0189_rotate_array)|Medium|C++|
 |229|[Majority Element II](./0229_majority_element_ii)|Medium|C++|
 |283|[Move Zeroes](./0283_move_zeroes)|Easy|C++|
+|485|[Max Consecutive Ones](./0485_max_consecutive_ones)|Easy|C++|
 |1752|[Check if Array Is Sorted and Rotated](./1752_check_if_array_is_sorted_and_rotated)|Easy|C++|
 
 ---
