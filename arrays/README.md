@@ -7,9 +7,9 @@
 | Difficulty | Count |
 |------------|------:|
 | Easy | 7 |
-| Medium | 2 |
+| Medium | 3 |
 | Hard | 0 |
-| **Total** | **9** |
+| **Total** | **10** |
 
 ---
 
@@ -19,6 +19,7 @@
 |---|---------|------------|----------|
 |1|[Two Sum](./0001_two_sum)|Easy|C++|
 |26|[Remove Duplicates from Sorted Array](./0026_remove_duplicates_from_sorted_array)|Easy|C++|
+|53|[Maximum Subarray](./0053_maximum_subarray)|Medium|C++|
 |118|[Pascal's Triangle](./0118_pascals_triangle)|Easy|C++|
 |169|[Majority Element](./0169_majority_element)|Easy|C++|
 |189|[Rotate Array](./0189_rotate_array)|Medium|C++|
